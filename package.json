@@ -1,0 +1,38 @@
+{
+	"name": "fast-ncu",
+	"version": "0.0.1-alpha.1",
+	"repository": "git@github.com:ShaunLWM/fast-ncu.git",
+	"author": "ShaunLWM",
+	"license": "MIT",
+	"preferGlobal": true,
+	"description": "🚀 Automated npm-check-updates for repository not cloned locally",
+	"keywords": [
+		"npm",
+		"updates",
+		"upgrades",
+		"dependencies",
+		"package.json",
+		"updater",
+		"version",
+		"management",
+		"ncu"
+	],
+	"engines": {
+		"node": ">=10.17"
+	},
+	"main": "./dist/index.js",
+	"bin": {
+		"fast-ncu": "./cli/index.js"
+	},
+	"files": [
+		"bin",
+		"lib"
+	],
+	"dependencies": {
+		"execa": "^4.0.3",
+		"temp-dir": "^2.0.0"
+	},
+	"devDependencies": {
+		"@types/node": "^14.10.1"
+	}
+}
